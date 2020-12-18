@@ -8,7 +8,7 @@ int main()
     srand(time(NULL));
     Relacion load;
     vector<Relacion> lista_relacion;
-    lista_relacion = load.Cargar("lista_relacion"); // medio funciona cargar archivo no funciona al 100
+    lista_relacion = load.Cargar("lista_relacion");
     int menu;
     cout << "1. Crear relaciones\n2. Ver relaciones\n3. Insertar tupla\n4. Salida\n";
     cout << "Ingrese la opcion: ";
