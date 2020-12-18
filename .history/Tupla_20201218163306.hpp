@@ -29,7 +29,7 @@ public:
     }
 
     int getID(){
-        return this->ID;
+        return this->atributos;
     }
 
 private:

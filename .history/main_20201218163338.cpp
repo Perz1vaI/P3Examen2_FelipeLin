@@ -167,9 +167,10 @@ int main()
                 cin >> num_relacion;
 
                 int id_rand = rand() % 8999 + 1000;
-                Tupla t(id_rand);
-                
+                Tupla t("6969");
+
                 lista_relacion[num_relacion].AddTupla(t);
+                cout <<  "::::" << lista_relacion[num_relacion].getTupla().back().getID() << endl;
                 int numero_tupla;
                 string atributo;
 

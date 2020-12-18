@@ -168,7 +168,7 @@ int main()
 
                 int id_rand = rand() % 8999 + 1000;
                 Tupla t(id_rand);
-                
+
                 lista_relacion[num_relacion].AddTupla(t);
                 int numero_tupla;
                 string atributo;

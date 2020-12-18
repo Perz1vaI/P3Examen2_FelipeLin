@@ -28,10 +28,6 @@ public:
         return this->atributos;
     }
 
-    int getID(){
-        return this->ID;
-    }
-
 private:
     int ID;
     vector<string> atributos;

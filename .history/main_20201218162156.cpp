@@ -8,7 +8,7 @@ int main()
     srand(time(NULL));
     Relacion load;
     vector<Relacion> lista_relacion;
-    lista_relacion = load.Cargar("lista_relacion");
+    //lista_relacion = load.Cargar("lista_relacion");
     int menu;
     cout << "1. Crear relaciones\n2. Ver relaciones\n3. Insertar tupla\n4. Salida\n";
     cout << "Ingrese la opcion: ";
@@ -121,7 +121,7 @@ int main()
             {
                 for (int i = 0; i < lista_relacion.size(); i++)
                 {
-                    cout << i << "-->" << lista_relacion[i].getNombre() << endl;
+                    cout << i << " " << lista_relacion[i].getNombre() << endl;
                 }
                 int num_relacion;
                 cout << "Ingrese cual relacion quiere ver: " << endl;
@@ -168,8 +168,9 @@ int main()
 
                 int id_rand = rand() % 8999 + 1000;
                 Tupla t(id_rand);
-                
+
                 lista_relacion[num_relacion].AddTupla(t);
+
                 int numero_tupla;
                 string atributo;
 
@@ -178,6 +179,7 @@ int main()
                     cout << "Ingrese un " << lista_relacion[num_relacion].getEncabezado()[i] << endl;
                     cin >> atributo;
                     lista_relacion[num_relacion].getTupla().back().AddAtributos(atributo);
+                    cout <<  "::::" << lista_relacion[num_relacion].getTupla().back().getAtributo()[0] << endl;
                 }
 
                 cout << "Desea ingresar otra tupla:\n1. continuar\n2. salir" << endl;

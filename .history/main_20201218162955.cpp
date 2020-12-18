@@ -168,8 +168,9 @@ int main()
 
                 int id_rand = rand() % 8999 + 1000;
                 Tupla t(id_rand);
-                
+
                 lista_relacion[num_relacion].AddTupla(t);
+
                 int numero_tupla;
                 string atributo;
 
@@ -178,6 +179,7 @@ int main()
                     cout << "Ingrese un " << lista_relacion[num_relacion].getEncabezado()[i] << endl;
                     cin >> atributo;
                     lista_relacion[num_relacion].getTupla().back().AddAtributos(atributo);
+                    //cout <<  "::::" << lista_relacion[num_relacion].getTupla().back().getAtributo()[0] << endl;
                 }
 
                 cout << "Desea ingresar otra tupla:\n1. continuar\n2. salir" << endl;
